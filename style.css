@@ -1,8 +1,17 @@
 html, body {
-  font-size: 16px; }
+  font-size: 16px;
+  background: #EEBB00; }
 
-header .title h1 {
-  font-size: 3em;
-  line-height: 1; }
+header .title {
+  text-align: center; }
+  header .title .icon {
+    width: 64px;
+    height: 64px; }
+  header .title h1 {
+    font-size: 3em;
+    line-height: 1.25;
+    margin: 0 auto;
+    color: #EF5350;
+    text-shadow: -1px -1px 0 #333370, 5px -5px 0 #333370, -5px 5px 0 #333370, 5px 5px 0 #333370; }
 
 /*# sourceMappingURL=style.css.map */
