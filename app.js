@@ -12,7 +12,7 @@ $(document).ready(function() {
     } else {
       console.log('Local data exists and was generated less than a day ago, continuing');
       DataCache = JSON.parse(localStorage.DataCache);
-      $('.loading').text('Done!').fadeOut('slow');
+      clearLoading();
     }
   }
 
@@ -42,8 +42,13 @@ function fetchData() {
     DataCache = data;
     localStorage.DataCache = JSON.stringify(data);
     localStorage.DataCacheCreated = Date.now();
-    $('.loading').text('Done!').fadeOut('slow');
+    clearLoading();
   });
+}
+
+function clearLoading() {
+  $('.loading').text('Done!').fadeOut('slow');
+  $('#num1').focus();
 }
 
 function processInput(num1, operator, num2) {
