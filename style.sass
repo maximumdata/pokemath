@@ -1,15 +1,71 @@
+*
+  outline: none
 html, body
   font-size: 16px
   background: #EEBB00
+  position: relative
 header
   .title
     text-align: center
     .icon
-      width: 64px
-      height: 64px
+      width: 3em /* 64/16 */
+      height: 3em /* 64/16 */
+      vertical-align: middle
+      margin: 0 5px
     h1
-      font-size: 3em
+      font-size: 2em
       line-height: 1.25
       margin: 0 auto
       color: #EF5350
       text-shadow: -1px -1px 0 #333370, 5px -5px 0 #333370, -5px 5px 0 #333370, 5px 5px 0 #333370
+
+main
+  margin-top: 20px
+  width: 100%
+  form
+    max-width: 400px
+    width: 100%
+    margin: 0 auto
+    text-align: center
+    .op
+      margin: 5px
+      width: 40px
+      height: 40px
+      font-size: 1em
+      background: white
+    .selected
+      background: #EF5350
+    input
+      width: 100px
+  .input
+    display: flex
+    align-items: center
+    div
+      text-align: center
+      font-size: .88em
+      //color: white
+      width: 30%
+      min-height: 1px
+      padding: 0 1.5%
+      float: left
+  .output
+    text-align: center
+
+
+.loading, .error
+  background: rgba(0,0,0,.75)
+  color: white
+  font-size: 2em
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  div
+    text-align: center
+
+.error
+  display: none

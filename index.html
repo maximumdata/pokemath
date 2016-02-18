@@ -5,15 +5,51 @@
   <title>PokéMath</title>
   <link rel="stylesheet" href="fonts/font.css">
   <link rel="stylesheet" href="style.css">
+  <script src="//code.jquery.com/jquery-2.2.0.min.js" charset="utf-8"></script>
   <script src="app.js" charset="utf-8"></script>
 </head>
 <body>
   <header>
     <div class="title">
-      <h1>Poké
-        <img class="icon" src="icon.png" alt="">
-      Math</h1>
+      <h1>Poké<img class="icon" src="icon.png" alt="">Math</h1>
     </div>
   </header>
+  <main>
+    <form>
+      <input type="number" id="num1">
+      <br>
+      <button type="button" class="op selected" id="plus">+</button>
+      <button type="button" class="op" id="minus">-</button>
+      <br>
+      <input type="number" id="num2">
+      <br>
+      <button type="submit">get</button>
+    </form>
+    <div class="input">
+      <div id="one">
+
+      </div>
+      <div id="operator">
+
+      </div>
+      <div id="two">
+
+      </div>
+    </div>
+    <div class="output">
+      <div id="result"></div>
+    </div>
+  </main>
+
+<div class="loading">
+  <div>
+    Loading data! Should be just a second.
+  </div>
+</div>
+<div class="error">
+  <div class="msg">
+
+  </div>
+</div>
 </body>
 </html>
