@@ -43,7 +43,7 @@ main {
     align-items: center; }
     main .input div {
       text-align: center;
-      font-size: 0.88em;
+      font-size: 1em;
       width: 30%;
       min-height: 1px;
       padding: 0 1.5%;
