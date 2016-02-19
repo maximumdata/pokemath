@@ -65,7 +65,7 @@ function processInput(num1, operator, num2) {
     throwError('too big');
     return;
   }
-  if(num <= 0) {
+  if(num < 0) {
     throwError('less than or equal to zero');
     return;
   }
